@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Envio WhatsApp Direto</title>
-    <meta name="description"
-        content="Ferramenta para envio rápido de mensagens no WhatsApp com salvamento e organização de contatos. Responsiva, com UX/UI profissional." />
-    <meta name="author" content="Antolin A. Junior" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Envio WhatsApp Direto</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <h1>Ferramenta de Envio WhatsApp</h1>
-    </header>
+  <header>
+    <h1>Ferramenta de Envio WhatsApp</h1>
+  </header>
 
-    <main class="container">
-        <form id="whatsappForm">
-            <label for="nome">Nome do Contato (opcional):</label>
-            <input type="text" id="nome" placeholder="Ex: Maria Souza" />
+  <main class="container">
 
-            <label for="numero">Número de Celular:</label>
-            <input type="text" id="numero" placeholder="Ex: (11) 91234-5678" required />
+    <form id="whatsappForm">
+      <label for="nome">Nome do Contato:</label>
+      <input type="text" id="nome" placeholder="Ex: Maria Souza" />
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" placeholder="Digite sua mensagem..."></textarea>
+      <label for="numero">Número de Celular:</label>
+      <input type="text" id="numero" placeholder="Ex: (11) 91234-5678" required />
 
-            <button type="submit">Enviar para o WhatsApp</button>
-        </form>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" placeholder="Digite sua mensagem..."></textarea>
 
-        <section class="contatos">
-            <h3>Contatos Salvos</h3>
-            <ul id="contatosLista"></ul>
-        </section>
-    </main>
+      <button type="submit">Enviar para o WhatsApp</button>
+    </form>
 
-    <footer>
-        Desenvolvido por <strong>Antolin A. Junior</strong> &copy; Todos os direitos reservados.
-    </footer>
+    <section class="contatos">
+      <h3>Contatos Salvos</h3>
+      <label for="senha">Digite a senha para ver mensagens:</label>
+      <input type="password" id="senha" placeholder="Senha para ver mensagens" />
+      <ul id="contatosLista"></ul>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
+  <footer>
+    Desenvolvido por <strong>Antolin A. Junior</strong> &copy; Todos os direitos reservados.
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
