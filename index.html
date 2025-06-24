@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Envio WhatsApp Direto</title>
+    <meta name="description"
+        content="Ferramenta para envio rápido de mensagens no WhatsApp com salvamento e organização de contatos. Responsiva, com UX/UI profissional." />
+    <meta name="author" content="Antolin A. Junior" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ferramenta de Envio WhatsApp</h1>
+    </header>
+
+    <main class="container">
+        <form id="whatsappForm">
+            <label for="nome">Nome do Contato (opcional):</label>
+            <input type="text" id="nome" placeholder="Ex: Maria Souza" />
+
+            <label for="numero">Número de Celular:</label>
+            <input type="text" id="numero" placeholder="Ex: (11) 91234-5678" required />
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" placeholder="Digite sua mensagem..."></textarea>
+
+            <button type="submit">Enviar para o WhatsApp</button>
+        </form>
+
+        <section class="contatos">
+            <h3>Contatos Salvos</h3>
+            <ul id="contatosLista"></ul>
+        </section>
+    </main>
+
+    <footer>
+        Desenvolvido por <strong>Antolin A. Junior</strong> &copy; Todos os direitos reservados.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
