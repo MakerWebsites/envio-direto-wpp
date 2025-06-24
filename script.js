@@ -68,3 +68,9 @@ document.getElementById("whatsappForm").addEventListener("submit", function(e) {
 document.getElementById("senha").addEventListener("input", listarContatos);
 
 listarContatos();
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js')
+    .then(() => console.log("Service Worker registrado"))
+    .catch(err => console.error("Erro no SW", err));
+}
